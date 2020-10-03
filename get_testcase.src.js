@@ -2,6 +2,9 @@ javascript: (function(){
     let ans = "";
 
     let i=0;
+    while($(`.lang-ja #pre-sample${i}`).length == 0) {
+        i++;
+    }
     while($(`.lang-ja #pre-sample${i}`).length > 0) {
         const input = $(`#pre-sample${i}`).html().trim();
         const expect = $(`#pre-sample${i+1}`).html().trim();
